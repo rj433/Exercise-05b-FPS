@@ -1,6 +1,8 @@
 # Exercise-05b-FPS
 Exercise for MSCH-C220, 29 March 2021
 
+A demonstration of this exercise is available at [https://youtu.be/To-ivKKIito](https://youtu.be/To-ivKKIito)
+
 This exercise is a chance to play with Godot's 3D capability for the first time. We will be creating a simple first-person-controlled character, and then adding some Constructive Solid Geometry to our scene.
 
 
