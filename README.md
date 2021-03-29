@@ -1,7 +1,8 @@
 # Exercise-05b-FPS
 Exercise for MSCH-C220, 29 March 2021
 
-This exercise is a chance to play with Godot's 3D capability for the first time. We will be creating a simple first-person-controlled character
+This exercise is a chance to play with Godot's 3D capability for the first time. We will be creating a simple first-person-controlled character, and then adding some Constructive Solid Geometry to our scene.
+
 
 Fork this repository. When that process has completed, make sure that the top of the repository reads [your username]/Exercise-05b-FPS. *Edit the LICENSE and replace BL-MSCH-C220-S21 with your full name.* Commit your changes.
 
@@ -90,6 +91,10 @@ Under Spatial->Transform, set Translation->x: 0.2, y: -0.15, z: -0.3. Set Rotati
 
 If you run the game again, you should now be holding a blue gun.
 
+Now, finally, right-click on the Game node and Add Child Node. Select CSGBox. In the inspector, set the Width: 2, Height: 2, Depth: 0.25, and select Use Collision. Under Spatial->Transform, set Translation->x: 1, y: 1, and under Rotation Degrees->y: 90.
+
+Right-click on the CSGBox and Add Child Node. Select CSGSphere. In the Inspector, set Radius: 0.5 and CSGShape->Operation: Subtraction. It should now appear that the sphere has been carved out of the wall, and your player should be able to collide with the shape as if the sphere weren't there.
+
 Quit Godot. In GitHub desktop, add a summary message, commit your changes and push them back to GitHub. If you return to and refresh your GitHub repository page, you should now see your updated files with the time when they were changed.
 
 Now edit the README.md file. When you have finished editing, commit your changes, and then turn in the URL of the main repository page (https://github.com/[username]/Exercise-05b-FPS) on Canvas.
@@ -99,7 +104,7 @@ The final state of the file should be as follows (replacing the "Created by" inf
 # Exercise-05b-FPS
 Exercise for MSCH-C220, 29 March 2021
 
-The first Godot 3D exercise, a simple first-person-controlled character
+The first Godot 3D exercise, a simple first-person-controlled character with some CSG terrain.
 
 ## Implementation
 Built using Godot 3.2.3
